@@ -1,7 +1,3 @@
-<ul>
-  <li *ngFor="let product of products">
-    <div class="col-sm-5">
-      <span class="album-name">{{product.albumName}}</span>
-    </div>
-  </li>
+<ul *ngFor="let product of products">
+  <li><a routerLink='/product/{{product.id}}' routerLinkActive='active'>{{product.albumName}}</a></li>
 </ul>
